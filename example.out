@@ -3,7 +3,7 @@ package whatever
 /* 
     Generated with this command:
 
-    genplate test.go.template test.out FuncName=BlahBlah RetVal=Yeehaw
+    genplate example.template example.out FuncName=BlahBlah RetVal=Yeehaw
 */
 
 func BlahBlah() string {
