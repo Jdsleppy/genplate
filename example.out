@@ -1,0 +1,11 @@
+package whatever
+
+/* 
+    Generated with this command:
+
+    genplate test.go.template test.out FuncName=BlahBlah RetVal=Yeehaw
+*/
+
+func BlahBlah() string {
+    return "Yeehaw"
+}
