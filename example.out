@@ -3,9 +3,12 @@ package whatever
 /* 
     Generated with this command:
 
-    genplate example.template example.out FuncName=BlahBlah RetVal=Yeehaw
+    genplate example.template example.out example.data
 */
 
 func BlahBlah() string {
-    return "Yeehaw"
+    println("YeeHaw")
+    println("YeeHaw")
+    println("yeeHaw")
+    println("yee_haw")
 }
