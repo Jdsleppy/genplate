@@ -71,10 +71,34 @@ data_file        relative path to a JSON file to be passed in as template data`,
 
 func usefulFuncs() template.FuncMap {
 	return template.FuncMap{
+		"Pluralize":  pluralize,
 		"CamelCase":  camelCase,
 		"PascalCase": pascalCase,
 		"SnakeCase":  snakeCase,
 	}
+}
+
+func pluralize(in string) (string, error) {
+	runes := []rune(in)
+	var out []rune
+
+	// copy all but last rune
+	for i := 0; i < len(runes)-1; i++ {
+		out = append(out, runes[i])
+	}
+
+	lastRune := runes[len(runes)-1]
+
+	switch lastRune {
+	case 's':
+		out = append(out, 's', 'e', 's')
+	case 'y':
+		out = append(out, 'i', 'e', 's')
+	default:
+		out = append(out, lastRune, 's')
+	}
+
+	return string(out), nil
 }
 
 func camelCase(in string) (string, error) {
@@ -152,6 +176,8 @@ func snakeCase(in string) (string, error) {
 		for _, r := range runes {
 			if unicode.IsUpper(r) {
 				out = append(out, '_', unicode.ToLower(r))
+			} else {
+				out = append(out, r)
 			}
 		}
 	case isPascalCase(in):

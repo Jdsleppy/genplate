@@ -7,8 +7,10 @@ package whatever
 */
 
 func {{ .FuncName }}() string {
-    println("{{ .PrintVal }}")
-    println("{{ PascalCase .PrintVal }}")
-    println("{{ CamelCase .PrintVal }}")
-    println("{{ SnakeCase .PrintVal }}")
+{{ range .PrintVals }}
+    println("{{ Pluralize . }}")
+    println("{{ PascalCase . }}")
+    println("{{ CamelCase . }}")
+    println("{{ SnakeCase . }}")
+{{ end }}
 }

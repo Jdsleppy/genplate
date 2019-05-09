@@ -1,4 +1,8 @@
 {
     "FuncName": "BlahBlah",
-    "PrintVal": "YeeHaw"
+    "PrintVals": [
+        "YeeHaw",
+        "howdyPartner",
+        "later_days_buddy"
+    ]
 }

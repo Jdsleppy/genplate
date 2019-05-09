@@ -7,8 +7,20 @@ package whatever
 */
 
 func BlahBlah() string {
-    println("YeeHaw")
+
+    println("YeeHaws")
     println("YeeHaw")
     println("yeeHaw")
     println("yee_haw")
+
+    println("howdyPartners")
+    println("HowdyPartner")
+    println("howdyPartner")
+    println("howdy_partner")
+
+    println("later_days_buddies")
+    println("Laterdaysbuddy")
+    println("laterdaysbuddy")
+    println("later_days_buddy")
+
 }
