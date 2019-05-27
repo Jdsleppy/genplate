@@ -56,7 +56,7 @@ func main() {
 
 func usage() {
 	println(
-		`genplate -- file generation with golang templates
+		`genplate -- file generation with golang templates https://golang.org/pkg/text/template/
 USAGE:
 
 	genplate template_file out_file data_file
