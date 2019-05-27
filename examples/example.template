@@ -1,10 +1,6 @@
-package whatever
+package examples
 
-/* 
-    Generated with this command:
-
-    genplate example.template example.out example.data
-*/
+// Code generated with genplate. DO NOT EDIT.
 
 func {{ .FuncName }}() string {
 {{ range .PrintVals }}
