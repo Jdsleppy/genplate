@@ -12,6 +12,12 @@ out_file         relative path to the output, which will be truncated
 data_file        relative path to a JSON file to be passed in as template data
 ```
 
+## Installation
+
+```
+$ go get github.com/Jdsleppy/genplate
+```
+
 ## Examples
 
 Full examples [here](https://github.com/Jdsleppy/genplate/tree/master/examples)
@@ -19,7 +25,7 @@ Full examples [here](https://github.com/Jdsleppy/genplate/tree/master/examples)
 ### `go generate` example
 
 `genplate/examples/generate.go`
-```
+```go
 package examples
 
 //go:generate genplate example.template generatedcowboy.go cowboylingo.json
@@ -39,16 +45,16 @@ package examples
 ```
 
 ```
-cd genplate
-go generate ./...
+$ cd genplate
+$ go generate ./...
 # generatedcowboy.go and generatedrobot.go now exist
 ```
 
 ### Command line example
 
 ```
-cd genplate
-genplate example.template generatedcowboy.go cowboylingo.json
+$ cd genplate/examples
+$ genplate example.template generatedcowboy.go cowboylingo.json
 # generatedcowboy.go now exists
 ```
 
