@@ -1,5 +1,5 @@
 # genplate
-~Code~ Anything generation with golang templates.
+File generation with golang templates https://golang.org/pkg/text/template/
 
 ```
 genplate -- file generation with golang templates
